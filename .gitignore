@@ -1,0 +1,4 @@
+# Project exclude paths
+/api/target/
+/oa-consumer/target/
+/oa-provider/target/
