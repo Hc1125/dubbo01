@@ -132,22 +132,7 @@ public class WxServiceController {
 		BaseResult result = MenuAPI.menuCreate(TokenManager.getDefaultToken(), menuString2);
 		return result;
 	}
-	
-	
-	/**
-	 * 2019-08-12 21:56:25.768  INFO 17076 --- [-nio-700-exec-3] c.m.s.controller.WxServiceController     : -------java.util.LinkedHashMap@2f2abfc5[accessOrder=false,threshold=6,loadFactor=0.75]
-2019-08-12 21:56:25.769  INFO 17076 --- [-nio-700-exec-3] c.m.s.controller.WxServiceController     : eventMessage:weixin.popular.bean.message.EventMessage@c630e26[toUserName=gh_d147868bd782,fromUserName=oTfG5uLQfrCXyqWBsJrKiYCzSP7M,createTime=1565618183,msgType=event,event=pic_sysphoto,eventKey=rselfmenu_1_0,msgId=<null>,content=<null>,picUrl=<null>,mediaId=<null>,format=<null>,recognition=<null>,thumbMediaId=<null>,location_X=<null>,location_Y=<null>,scale=<null>,label=<null>,title=<null>,description=<null>,url=<null>,ticket=<null>,latitude=<null>,longitude=<null>,precision=<null>,status=<null>,totalCount=<null>,filterCount=<null>,sentCount=<null>,errorCount=<null>,copyrightCheckResult=<null>,expiredTime=<null>,failTime=<null>,failReason=<null>,uniqId=<null>,poiId=<null>,result=<null>,msg=<null>,chosenBeacon=<null>,aroundBeacons=<null>,lotteryId=<null>,money=<null>,bindTime=<null>,connectTime=<null>,expireTime=<null>,vendorId=<null>,shopId=<null>,deviceNo=<null>,keyStandard=<null>,keyStr=<null>,country=<null>,province=<null>,city=<null>,sex=<null>,scene=<null>,regionCode=<null>,reasonMsg=<null>,otherElements=[[SendPicsInfo: null]]]
 
-2019-08-12 21:56:27.365  INFO 17076 --- [-nio-700-exec-5] c.m.s.controller.WxServiceController     : -------java.util.LinkedHashMap@3de4b61b[accessOrder=false,threshold=6,loadFactor=0.75]
-2019-08-12 21:56:27.366  INFO 17076 --- [-nio-700-exec-5] c.m.s.controller.WxServiceController     : eventMessage:weixin.popular.bean.message.EventMessage@4d0c41ed[toUserName=gh_d147868bd782,fromUserName=oTfG5uLQfrCXyqWBsJrKiYCzSP7M,createTime=1565618184,msgType=image,event=<null>,eventKey=<null>,msgId=22414265262016918,content=<null>,
-picUrl=http://mmbiz.qpic.cn/mmbiz_jpg/SOtsOG8InB22cOpTg1QibBPuvDd925wiaFlBYI2u73jATVQiavMhSfDqClVNXtmekFNcsPHSJdgqJwnXxM7ibYJ3ibQ/0
-,mediaId=nyuaazGe91AH09MVYXQGpIJ_ZOlYci6AkuzmJs_quJmAkidVeugeNf8NwkrxnaBK,format=<null>,recognition=<null>,thumbMediaId=<null>,location_X=<null>,location_Y=<null>,scale=<null>,label=<null>,title=<null>,description=<null>,url=<null>,ticket=<null>,latitude=<null>,longitude=<null>,precision=<null>,status=<null>,totalCount=<null>,filterCount=<null>,sentCount=<null>,errorCount=<null>,copyrightCheckResult=<null>,expiredTime=<null>,failTime=<null>,failReason=<null>,uniqId=<null>,poiId=<null>,result=<null>,msg=<null>,chosenBeacon=<null>,aroundBeacons=<null>,lotteryId=<null>,money=<null>,bindTime=<null>,connectTime=<null>,expireTime=<null>,vendorId=<null>,shopId=<null>,deviceNo=<null>,keyStandard=<null>,keyStr=<null>,country=<null>,province=<null>,city=<null>,sex=<null>,scene=<null>,regionCode=<null>,reasonMsg=<null>,otherElements=<null>]
-
-	 * @param param
-	 * @param request
-	 * @param response
-	 * @throws Exception
-	 */
 	@RequestMapping("sig")
 	@ResponseBody
 	public void sig(@RequestParam Map<String, String> param , HttpServletRequest request, HttpServletResponse response) throws Exception{
@@ -195,50 +180,6 @@ picUrl=http://mmbiz.qpic.cn/mmbiz_jpg/SOtsOG8InB22cOpTg1QibBPuvDd925wiaFlBYI2u73
 			} else {
 				expireKey.add(key);
 			}
-/**
- * erviceController     : eventMessage:weixin.popular.bean.message.EventMessage@2d2a1bd[toUserName=gh_d147868bd782,fromUserName=oTfG5uBhe66GO2jHtQ77OnDuenoY,createTime=1565618365,msgType=event,event=pic_weixin,eventKey=rselfmenu_1_2,msgId=<null>,content=<null>,picUrl=<null>,mediaId=<null>,format=<null>,recognition=<null>,thumbMediaId=<null>,location_X=<null>,location_Y=<null>,scale=<null>,label=<null>,title=<null>,description=<null>,url=<null>,ticket=<null>,latitude=<null>,longitude=<null>,precision=<null>,status=<null>,totalCount=<null>,filterCount=<null>,sentCount=<null>,errorCount=<null>,copyrightCheckResult=<null>,expiredTime=<null>,failTime=<null>,failReason=<null>,uniqId=<null>,poiId=<null>,result=<null>,msg=<null>,chosenBeacon=<null>,aroundBeacons=<null>,lotteryId=<null>,money=<null>,bindTime=<null>,connectTime=<null>,expireTime=<null>,vendorId=<null>,shopId=<null>,deviceNo=<null>,keyStandard=<null>,keyStr=<null>,country=<null>,province=<null>,city=<null>,sex=<null>,scene=<null>,regionCode=<null>,reasonMsg=<null>,otherElements=[[SendPicsInfo: null]]]
-2019-08-12 21:59:28.026  INFO 17076 --- [-nio-700-exec-3] c.m.s.controller.WxServiceController     : -------java.util.LinkedHashMap@401988b[accessOrder=false,threshold=6,loadFactor=0.75]
- * 
- * 
- * 
- * 
- * 2019-08-14 21:53:15.270  INFO 22868 --- [io-8080-exec-10] c.m.s.controller
- * 
- * .WxServiceController     : 
- * eventMessage:weixin.popular.bean.message.EventMessage@68e70c39[
- * 
- * toUserName=gh_a32b261573f7,fromUserName=oDk2XxEl0HIQy5tAA16Xn76TtJJw,
- * createTime=1565790791,
- * msgType=event,event=SCAN,eventKey=123,msgId=<null>,content=<null>,picUrl=<null>,mediaId=<null>,format=<null>,recognition=<null>,thumbMediaId=<null>,location_X=<null>,location_Y=<null>,scale=<null>,label=<null>,title=<null>,description=<null>,url=<null>,ticket=gQEt7zwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAya2lIdmdoZWRlbjQxbHRjdGh0Y0IAAgTdEVRdAwSAOgkA,latitude=<null>,longitude=<null>,precision=<null>,status=<null>,totalCount=<null>,filterCount=<null>,sentCount=<null>,errorCount=<null>,copyrightCheckResult=<null>,expiredTime=<null>,failTime=<null>,failReason=<null>,uniqId=<null>,poiId=<null>,result=<null>,msg=<null>,chosenBeacon=<null>,aroundBeacons=<null>,lotteryId=<null>,money=<null>,bindTime=<null>,connectTime=<null>,expireTime=<null>,vendorId=<null>,shopId=<null>,deviceNo=<null>,keyStandard=<null>,keyStr=<null>,country=<null>,province=<null>,city=<null>,sex=<null>,scene=<null>,regionCode=<null>,reasonMsg=<null>,otherElements=<null>]
-
-
-
-
-
-
-
-2019-08-14 21:53:15.270  INFO 22868 --- [io-8080-exec-10] c.m.s.controller.WxServiceController     : 24_7mgB663yKAWJUN5qxeIvgsp4oSzqKKbzW8aEw9nHs81Vr5ERH676SO1SZLXn5e3F3ASE-WTCgb143srIBnf6qiX5wgYsZmXNQV8DF_dbY2VDbWv309Gul7lRbL2zh025cp5rmQ404VpQTqFDSBXcAFAYHD
-2019-08-14 21:53:17.981  INFO 22868 --- [nio-8080-exec-9] c.m.s.controller.WxServiceController     : eventMessage:weixin.popular.bean.message.EventMessage@36043ec2[toUserName=gh_a32b261573f7,fromUserName=oDk2XxG30De_sf6pmvDBCJKu153Q,createTime=1565790793,msgType=event,event=SCAN,eventKey=123,msgId=<null>,content=<null>,picUrl=<null>,mediaId=<null>,format=<null>,recognition=<null>,thumbMediaId=<null>,location_X=<null>,location_Y=<null>,scale=<null>,label=<null>,title=<null>,description=<null>,url=<null>,ticket=gQEt7zwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAya2lIdmdoZWRlbjQxbHRjdGh0Y0IAAgTdEVRdAwSAOgkA,latitude=<null>,longitude=<null>,precision=<null>,status=<null>,totalCount=<null>,filterCount=<null>,sentCount=<null>,errorCount=<null>,copyrightCheckResult=<null>,expiredTime=<null>,failTime=<null>,failReason=<null>,uniqId=<null>,poiId=<null>,result=<null>,msg=<null>,chosenBeacon=<null>,aroundBeacons=<null>,lotteryId=<null>,money=<null>,bindTime=<null>,connectTime=<null>,expireTime=<null>,vendorId=<null>,shopId=<null>,deviceNo=<null>,keyStandard=<null>,keyStr=<null>,country=<null>,province=<null>,city=<null>,sex=<null>,scene=<null>,regionCode=<null>,reasonMsg=<null>,otherElements=<null>]
-2019-08-14 21:53:17.981  INFO 22868 --- [nio-8080-exec-9] c.m.s.controller.WxServiceController     : 24_7mgB663yKAWJUN5qxeIvgsp4oSzqKKbzW8aEw9nHs81Vr5ERH676SO1SZLXn5e3F3ASE-WTCgb143srIBnf6qiX5wgYsZmXNQV8DF_dbY2VDbWv309Gul7lRbL2zh025cp5rmQ404VpQTqFDSBXcAFAYHD
-
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
-2019-08-12 21:59:28.027  INFO 17076 --- [-nio-700-exec-3] c.m.s.controller.WxServiceController     : eventMessage:weixin.popular.bean.message.EventMessage@29111c23[toUserName=gh_d147868bd782,fromUserName=oTfG5uBhe66GO2jHtQ77OnDuenoY,createTime=1565618365,msgType=image,event=<null>,eventKey=<null>,msgId=22414264928317727,content=<null>,picUrl=http://mmbiz.qpic.cn/mmbiz_jpg/06ib7Uood3MG6tlVHVWuXgGvia91dVGT802vGk6TaT72picWUdN5LEFCa3V0iaQla8VfAQ5icbCrZvjvxKjOiaE3FLBg/0,mediaId=zYNNuHMhJ0dstBmlXEiBHmo69BZnjFKp6J6MNP8i9ZtLrJFnZKBYE9qEn3Bu2Xp8,format=<null>,recognition=<null>,thumbMediaId=<null>,location_X=<null>,location_Y=<null>,scale=<null>,label=<null>,title=<null>,description=<null>,url=<null>,ticket=<null>,latitude=<null>,longitude=<null>,precision=<null>,status=<null>,totalCount=<null>,filterCount=<null>,sentCount=<null>,errorCount=<null>,copyrightCheckResult=<null>,expiredTime=<null>,failTime=<null>,failReason=<null>,uniqId=<null>,poiId=<null>,result=<null>,msg=<null>,chosenBeacon=<null>,aroundBeacons=<null>,lotteryId=<null>,money=<null>,bindTime=<null>,connectTime=<null>,expireTime=<null>,vendorId=<null>,shopId=<null>,deviceNo=<null>,keyStandard=<null>,keyStr=<null>,country=<null>,province=<null>,city=<null>,sex=<null>,scene=<null>,regionCode=<null>,reasonMsg=<null>,otherElements=<null>]
-2019-08-12 21:59:37.481  INFO 17076 --- [-nio-700-exec-5] c.m.s.controller.WxServiceController     : -------java.util.LinkedHashMap@5e541c85[accessOrder=false,threshold=6,loadFactor=0.75]
- */
 		
 			
 			logger.info(TokenManager.getDefaultToken());

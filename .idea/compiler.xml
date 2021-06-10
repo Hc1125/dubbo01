@@ -8,9 +8,9 @@
         <outputRelativeToContentRoot value="true" />
         <module name="api" />
         <module name="wx-provider" />
-        <module name="wx-consumer" />
-        <module name="oa-consumer" />
         <module name="oa-provider" />
+        <module name="oa-consumer" />
+        <module name="wx-consumer" />
       </profile>
     </annotationProcessing>
   </component>

@@ -39,8 +39,6 @@ import com.mashibing.springboot.service.IRoleService;
 @RequestMapping("/manager")
 public class ManagerController {
 
-	
-
 	@Reference(version = "1.0.0")
 	IAccountService accountSrv;
 
